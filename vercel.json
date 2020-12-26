@@ -1,9 +1,5 @@
 {
   "version": 2,
-  "env": {
-    "REDISENDPOINT_URL": "",
-    "REDIS_PASSWORD": ""
-  },
   "builds": [
     {
       "src": "./index.js",
