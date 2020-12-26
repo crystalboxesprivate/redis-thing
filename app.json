@@ -3,11 +3,11 @@
   "env": {
     "REDISENDPOINT_URL": {
       "description": "A Redis cloud endpoint URL.",
-      "required": "true"
+      "required": true
     },
     "REDIS_PASSWORD": {
       "description": "A Redis password.",
-      "required": "true"
+      "required": true
     }
   }
 }
