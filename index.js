@@ -9,7 +9,7 @@ const [host, port] = endpoint.split(":");
 const client = redis.createClient(port, host);
 client.auth(password, (error, reply) => {
   const app = express();
-  app.use(express.static("build"));
+  app.use(express.static(__dirname + "public"));
 
   app.get("/c", (_, res) => {
     client.incr("counter", (e, r) => {
