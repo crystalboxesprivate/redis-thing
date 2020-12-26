@@ -1,12 +1,13 @@
 {
-  "id": "v1",
   "name": "Node.js Sample",
-  "description": "A barebones Node.js app using Express",
-  "repository": "https://github.com/heroku/node-js-getting-started",
-  "logo": "https://node-js-sample.herokuapp.com/node.png",
-  "keywords": ["node", "express", "static"],
   "env": {
-    "REDISENDPOINT_URL": "",
-    "REDIS_PASSWORD": ""
+    "REDISENDPOINT_URL": {
+      "description": "A Redis cloud endpoint URL.",
+      "required": "true"
+    },
+    "REDIS_PASSWORD": {
+      "description": "A Redis password.",
+      "required": "true"
+    }
   }
 }
