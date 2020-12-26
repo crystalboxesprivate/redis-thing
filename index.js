@@ -27,7 +27,14 @@ const express = require("express");
 
 const app = express();
 
-app.get("/", (req, res) => res.send("Home Page Route"));
+app.get("/", (req, res) =>
+  res.send(
+    "Home Page Route" +
+      process.env.REDISENDPOINT_URL +
+      " " +
+      process.env.REDIS_PASSWORD
+  )
+);
 
 app.get("/about", (req, res) => res.send("About Page Route"));
 
